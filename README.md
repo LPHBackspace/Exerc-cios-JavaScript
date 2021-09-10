@@ -1,2 +1,2 @@
-# Exerc-cios-JavaScript
+# Exercicios-JavaScript
 Primeiras aulas de JavaScript
