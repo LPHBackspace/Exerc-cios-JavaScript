@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+    <!--11) Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, 
+mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele 
+efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas 
+vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do 
+vendedor.-->
+</head>
+<body>
+    <script>
+        var salario=parseInt(prompt("Digite o seu salário fixo:"));
+        var vendas=parseInt(prompt("Digite o valor total das suas vendas mensais:"));
+        var carros=parseInt(prompt("Digite a quantidade de carros vendidos no mês:"));
+        var comissao=parseInt(prompt("Agora digite o valor de comissão de suas vendas:"));
+        var total= ((vendas/100)*5)+(carros*comissao)+salario;
+        alert("Seu salário deste mês corresponde a: "+total);
+    </script>
+    
+</body>
+</html>
