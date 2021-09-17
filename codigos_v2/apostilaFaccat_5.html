@@ -7,15 +7,15 @@
     <meta name="autor" content="Leandro de Oliveira Custódio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 5</title>
-    <!--9) Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. 
-Calcular e escrever o valor do novo salário.-->
 </head>
 <body>
     <script>
-        var salario=parseInt(prompt("Digite o vlor do seu salario atual"));
-        var ajuste=parseInt(prompt("Agora digite o percentual de reajuste"));
+        /*9) Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. 
+Calcular e escrever o valor do novo salário.*/
+        var salario=parseFloat(prompt("Digite o valor do seu salario atual"));
+        var ajuste=parseFloat(prompt("Agora digite o percentual de reajuste"));
         var novoSalario= ((salario/100)*ajuste)+salario;
-        alert("Seu salário será ajustado para: "+novoSalario)
+        alert("Seu salário será ajustado para: "+novoSalario.toFixed(2));
     </script>
     
 </body>

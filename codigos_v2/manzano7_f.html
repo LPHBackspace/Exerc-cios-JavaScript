@@ -12,8 +12,15 @@ forma que a variável A passe a possuir o valor da variável B e a variável B p
 variável A. Apresentar os valores trocados-->
 </head>
 <body>
-    <script>
-      
-    </script>
+      <h1>Operação Finalizada.</h1>
+<script defer>
+    var a = prompt("Digite um valor para A: ");
+    var b = prompt("Digite um valor para B: ");
+    var c = a;
+    a = b;
+    b = c;
+    alert("A: " + a + "\nB: " + b);
+</script>
+<button onclick="document.location.reload(true);">Reset</button>
 </body>
 </html>
