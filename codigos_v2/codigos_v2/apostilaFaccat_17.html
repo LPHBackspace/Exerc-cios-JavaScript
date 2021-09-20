@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 17</title>
+    <!-- Ler a hora de início e a hora de fim de um jogo de Xadrez (considere apenas horas inteiras, sem os 
+minutos) e calcule a duração do jogo em horas, sabendo-se que o tempo máximo de duração do jogo é 
+de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.-->
+</head>
+<body>
+    <script>
+         var inicio=parseInt(prompt("Digite o horario de início do jogo de xadrez:"));
+         var fim=parseInt(prompt("Digite o horario de termino do jogo de xadrez:"));
+         if (inicio>fim){var tempo = (fim+24)-inicio
+         } else {
+         var tempo = fim - inicio
+         }
+         if (tempo==1){
+             alert('O jogo durou '+tempo+' hora');
+         } else {
+         alert('O jogo durou '+tempo+' horas');}
+    </script>
+</body>
+</html>

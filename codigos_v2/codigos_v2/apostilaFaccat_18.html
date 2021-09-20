@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 18</title>
+    <!-- ) A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais 
+de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. 
+Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva 
+o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas 
+(considere que o mês possua 4 semanas exatas). -->
+</head>
+<body>
+    <script>
+         var salph=parseInt(prompt("Digite o salario por hora:"));
+         var semana1=parseInt(prompt("Digite a quantidade de horas trabalhadas na primeira semana do mês:"));
+         if (semana1>40) {
+         var val1 = (((semana1-40)*1.5)*salph)+(40*salph);
+         } else {
+             val1 = (salph*semana1);
+         }
+         var semana2=parseInt(prompt("Digite a quantidade de horas trabalhadas na segunda semana do mês:"));
+         if (semana2>40) {
+         var val2 = (((semana2-40)*1.5)*salph)+(40*salph);
+         } else {
+             val2 = (salph*semana2);
+         }
+         var semana3=parseInt(prompt("Digite a quantidade de horas trabalhadas na terceira semana do mês:"));
+         if (semana3>40) {
+         var val3 = (((semana3-40)*1.5)*salph)+(40*salph);
+         } else {
+             val3 = (salph*semana3);
+         }
+         var semana4=parseInt(prompt("Digite a quantidade de horas trabalhadas na quarta semana do mês:"));
+         if (semana4>40) {
+         var val4 = (((semana4-40)*1.5)*salph)+(40*salph);
+         } else {
+             val4 = (salph*semana4);
+         }
+         var valfinal = val1+val2+val3+val4;
+         alert('O salario deste mes corresponde à: R$'+valfinal);
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio g</title>
+    <!--Ler quatro números inteiros e apresentar o resultado da adição e multiplicação, baseando-se na 
+utilização do conceito da propriedade distributiva. Ou seja, se forem lidas as variáveis A, B, C, e D, 
+devem ser somadas e multiplicadas A com B, A com C e A com D. Depois B com C, B com D e por fim 
+C com D. Perceba que será necessário efetuar seis operações de adição e seis operações de 
+multiplicação e apresentar doze resultados de saída.
+-->
+</head>
+<body>
+    <script>
+        var a=parseInt(prompt("Escreva o valor A"));
+        var b=parseInt(prompt("Escreva o valor B"));
+        var c=parseInt(prompt("Escreva o valor C"));
+        var d=parseInt(prompt("Escreva o valor D"));
+
+        var soma1 = (a + b);
+        var soma2 = (a + c);
+        var soma3 = (a + d);
+        var soma4 = (b + c);
+        var soma5 = (b + d);
+        var soma6 = (c + d);
+
+        var mult1 = (a * b);
+        var mult2 = (a * c);
+        var mult3 = (a * d);
+        var mult4 = (b * c);
+        var mult5 = (b * d);
+        var mult6 = (c * d);
+
+        alert(
+            "Soma de A com B: "+soma1
+        +"\nSoma de A com C: "+soma2
+        +"\nSoma de A com D: "+soma3
+        +"\nSoma de B com C: "+soma4
+        +"\nSoma de B com D: "+soma5
+        +"\nSoma de C com D: "+soma6
+        );
+
+        alert(
+            "Multiplicação de A com B: "+mult1
+        +"\nMultiplicação de A com C: "+mult2
+        +"\nMultiplicação de A com D: "+mult3
+        +"\nMultiplicação de B com C: "+mult4
+        +"\nMultiplicação de B com D: "+mult5
+        +"\nMultiplicação de C com D: "+mult6
+        );
+    </script>
+</body>
+</html>
