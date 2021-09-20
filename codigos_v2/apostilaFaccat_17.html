@@ -13,7 +13,16 @@ de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.-->
 </head>
 <body>
     <script>
-         
+         var inicio=parseInt(prompt("Digite o horario de início do jogo de xadrez:"));
+         var fim=parseInt(prompt("Digite o horario de termino do jogo de xadrez:"));
+         if (inicio>fim){var tempo = (fim+24)-inicio
+         } else {
+         var tempo = fim - inicio
+         }
+         if (tempo==1){
+             alert('O jogo durou '+tempo+' hora');
+         } else {
+         alert('O jogo durou '+tempo+' horas');}
     </script>
 </body>
 </html>
