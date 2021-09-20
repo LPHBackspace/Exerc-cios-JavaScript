@@ -6,17 +6,34 @@
     <meta name="description" content="">
     <meta name="autor" content="Leandro de Oliveira Custódio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 18</title>
-    <!-- Ler dois valores (considere que não serão lidos valores iguais) e escrever o maior deles. -->
+    <title>Exercicio 19</title>
+    <!-- Para o enunciado a seguir foi elaborado um algoritmo em Português Estruturado que contém 
+erros, identifique os erros no algoritmo apresentado abaixo:
+Enunciado: Tendo como dados de entrada o nome, a altura e o sexo (M ou F) de uma pessoa, calcule 
+e mostre seu peso ideal, utilizando as seguintes fórmulas: 
+ - para sexo masculino: peso ideal = (72.7 * altura) - 58 
+ - para sexo feminino: peso ideal = (62.1 * altura) - 44.7 
+inicio 
+ler nome 
+ler sexo 
+se sexo = M então 
+peso_ideal  (72.7 * altura) - 58 
+senão 
+peso_ideal  (62.1 * altura) – 44.7 
+ fim_se 
+escrever peso_ideal 
+fim  -->
 </head>
 <body>
     <script>
-         var val1=parseInt(prompt("Digite um valor:"));
-         var val2=parseInt(prompt("Digite outro valor:"));
-         if (val1>val2)
-         alert("O maior valor é o valor 1 : "+val1+"; Seguido do valor 2 : "+val2);
-         if (val2>val1)
-         alert("O maior valor é o valor 2 : "+val2+"; Seguido do valor 1 : "+val1);
+         var sexo=(prompt("Digite '1' se você for mulher ou '2' se você for homem"));
+         var altura=parseInt(prompt("Digite sua estatura"));
+         if (sexo==1) {
+         var peso = (62.1*altura)-44.7
+        } else {
+         var peso = (72.7*altura)-58 
+         }
+         alert("Seu peso ideal é: kg"+peso);
     </script>
 </body>
 </html>

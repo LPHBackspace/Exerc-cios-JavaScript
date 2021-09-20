@@ -15,12 +15,33 @@ o salário total do funcionário, que deverá ser acrescido das horas extras, ca
 </head>
 <body>
     <script>
-         var val1=parseInt(prompt("Digite um valor:"));
-         var val2=parseInt(prompt("Digite outro valor:"));
-         if (val1>val2)
-         alert("O maior valor é o valor 1 : "+val1+"; Seguido do valor 2 : "+val2);
-         if (val2>val1)
-         alert("O maior valor é o valor 2 : "+val2+"; Seguido do valor 1 : "+val1);
+         var salph=parseInt(prompt("Digite o salario por hora:"));
+         var semana1=parseInt(prompt("Digite a quantidade de horas trabalhadas na primeira semana do mês:"));
+         if (semana1>40) {
+         var val1 = (((semana1-40)*1.5)*salph)+(40*salph);
+         } else {
+             val1 = (salph*semana1);
+         }
+         var semana2=parseInt(prompt("Digite a quantidade de horas trabalhadas na segunda semana do mês:"));
+         if (semana2>40) {
+         var val2 = (((semana2-40)*1.5)*salph)+(40*salph);
+         } else {
+             val2 = (salph*semana2);
+         }
+         var semana3=parseInt(prompt("Digite a quantidade de horas trabalhadas na terceira semana do mês:"));
+         if (semana3>40) {
+         var val3 = (((semana3-40)*1.5)*salph)+(40*salph);
+         } else {
+             val3 = (salph*semana3);
+         }
+         var semana4=parseInt(prompt("Digite a quantidade de horas trabalhadas na quarta semana do mês:"));
+         if (semana4>40) {
+         var val4 = (((semana4-40)*1.5)*salph)+(40*salph);
+         } else {
+             val4 = (salph*semana4);
+         }
+         var valfinal = val1+val2+val3+val4;
+         alert('O salario deste mes corresponde à: R$'+valfinal);
     </script>
 </body>
 </html>
