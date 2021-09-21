@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio4</title>
+    <!--8) Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos 
+brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total 
+de eleitores. -->
+</head>
+<body>
+    <script>
+        var eleitores=parseInt(prompt("Digite o número de eleitorem no município:"));
+        var brancos=parseInt(prompt("Digite o número de votos em branco no município:"));
+        var nulos=parseInt(prompt("Digite o número de votos nulos no município:"));
+        var validos=parseInt(prompt("Digite o número de votos validos no município:"));
+        var percentualB= (brancos/eleitores)*100;
+        var percentualN= (nulos/eleitores)*100;
+        var percentualV= (validos/eleitores)*100;
+        alert("O percentual de votos em branco é "+percentualB);
+        alert("O percentual de votos nulos é "+percentualN);
+        alert("O percentual de votos validos é "+percentualV);
+    </script>
+</body>
+</html>
