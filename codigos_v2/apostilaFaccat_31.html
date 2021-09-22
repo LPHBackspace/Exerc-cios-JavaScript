@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="autor" content="Leandro de Oliveira Custódio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 30</title>
+    <title>Exercicio 31</title>
     <!--Um posto está vendendo combustíveis com a seguinte tabela de descontos: 
 até 20 litros, desconto de 3% por litro Álcool 
 acima de 20 litros, desconto de 5% por litro 
@@ -17,16 +17,28 @@ que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R
 </head>
 <body>
     <script>
-         var num1=parseInt(prompt("Digite o numero 1"))
-         var num2=parseInt(prompt("Digite o numero 2"))
-         if (num1>num2){
-        alert("O Primeiro numero é maior");
+         var combustivel=(prompt("Digite 'A' para Álcool ou 'G' para Gasolina"));
+         var litros=(prompt("Digite a quantidade de litros"));
+         var preco_a= 3.30;
+         var preco_b= 2.90;
+         if (combustivel==a){
+         if (litros>20){
+         var total = (litros*preco_a)-((((litros-20)*preco_a)*0.5)+((20*preco_a)*0.3));
+         alert("Preço a pagar por: "+litros+"L = "+total);
+         } else {
+        var total = (litros*preco_a)-((litros*preco_a)*0.3);
+         alert("Preço a pagar por: "+litros+"L = "+total);
          }
-         if (num2>num1){
-            alert("O Segundo numero é maior");
+        }
+        else {
+         if (litros>20){
+         var total = (litros*preco_b)-((((litros-20)*preco_b)*0.6)+((20*preco_b)*0.4));
+         alert("Preço a pagar por: "+litros+"L = "+total);
+          } else {
+        var total = (litros*preco_b)-((litros*preco_b)*0.4);
+         alert("Preço a pagar por: "+litros+"L = "+total);
          }
-         if (num1==num2) {
-            alert("Números iguais");
-         }
+        }
+         
     </script>
 </body>

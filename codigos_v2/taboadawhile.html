@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Exercicio Calculadora</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var num= 7;
+        var calc= 1;
+        var result="";
+        while (calc<11){
+            /*7*1=7*/
+            result +="<br>"+num+"x"+calc+" = "+(calc*num);
+            calc++;
+        }
+        document.getElementById("demo").innerHTML=result;
+    </script>
+</body>
+</html>

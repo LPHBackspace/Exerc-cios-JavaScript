@@ -1,0 +1,46 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 32</title>
+    <!--Escreva um algoritmo que leia as idades de 2 homens e de 2 mulheres (considere que as idades 
+dos homens serão sempre diferentes entre si, bem como as das mulheres). Calcule e escreva a soma 
+das idades do homem mais velho com a mulher mais nova, e o produto das idades do homem mais 
+novo com a mulher mais velha.-->
+</head>
+<body>
+    <script>
+        var homem1= parseInt(prompt("Escreva a idade do 1° homem"));
+        var homem2= parseInt(prompt("Escreva a idade do 2° homem"));
+        var mulher1= parseInt(prompt("Escreva a idade do 1° mulher"));
+        var mulher2= parseInt(prompt("Escreva a idade do 2° mulher"));
+        if (homem1>homem2){
+            if(mulher1>mulher2){
+                var conta1= homem1+mulher2;
+                var conta2= homem2*mulher1;
+                alert("soma das idades do homem mais velho com a mulher mais nova: "+conta1
+                +"\nproduto das idades do homem mais novo com a mulher mais velha."+conta2);
+            } else {
+                var conta1= homem1+mulher1;
+                var conta2= homem2*mulher2;
+                alert("soma das idades do homem mais velho com a mulher mais nova: "+conta1
+                +"\nproduto das idades do homem mais novo com a mulher mais velha."+conta2);
+            }
+        } else {
+            if(mulher1>mulher2){
+                var conta1= homem2+mulher2;
+                var conta2= homem1*mulher1;
+                alert("soma das idades do homem mais velho com a mulher mais nova: "+conta1
+                +"\nproduto das idades do homem mais novo com a mulher mais velha."+conta2);
+            } else {
+                var conta1= homem2+mulher1;
+                var conta2= homem1*mulher2;
+                alert("soma das idades do homem mais velho com a mulher mais nova: "+conta1
+                +"\nproduto das idades do homem mais novo com a mulher mais velha."+conta2);
+            }
+        }
+    </script>
+</body>

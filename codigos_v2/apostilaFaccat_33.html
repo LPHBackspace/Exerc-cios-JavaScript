@@ -1,0 +1,39 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 33</title>
+    <!--) Uma fruteira está vendendo frutas com a seguinte tabela de preços: 
+Até 5 Kg Acima de 5 Kg 
+Morango R$ 2,50 por Kg R$ 2,20 por Kg 
+Maçã R$ 1,80 por Kg R$ 1,50 por Kg 
+Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá 
+ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de 
+morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.-->
+</head>
+<body>
+    <script>
+      var fruta=prompt("Digite 'A' para MORANGO ou 'B' para MAÇÃ");
+      var kg=parseInt(prompt("Digite quantos quilos deseja comprar de fruta"));
+      if (fruta==a){
+          if (kg<=5){
+              var total= kg*2.50;
+              alert(kg+"Kg de Morango = R$"+total);
+          } else {
+              var total= ((kg-5)*2.20)+(5*2.50);
+              alert(kg+"Kg de Morango = R$"+total);
+          }
+      } else {
+        if (kg<=5){
+              var total= kg*2.50;
+              alert(kg+"Kg de Morango = R$"+total);
+          } else {
+              var total= ((kg-5)*2.20)+(5*2.50);
+              alert(kg+"Kg de Morango = R$"+total);
+          }
+      }
+    </script>
+</body>
