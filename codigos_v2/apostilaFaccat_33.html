@@ -16,23 +16,31 @@ morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pag
 </head>
 <body>
     <script>
-      var fruta=prompt("Digite 'A' para MORANGO ou 'B' para MAÇÃ");
+      var fruta=prompt("Digite '1' para MORANGO ou '2' para MAÇÃ");
       var kg=parseInt(prompt("Digite quantos quilos deseja comprar de fruta"));
-      if (fruta==a){
+      if (fruta==1){
           if (kg<=5){
               var total= kg*2.50;
               alert(kg+"Kg de Morango = R$"+total);
+          } if (kg>8) {
+            var conta= ((kg-5)*2.20)+(5*2.50);
+            var total= conta-((conta/100)*10);
+              alert(kg+"Kg de Morango = R$"+total);
           } else {
-              var total= ((kg-5)*2.20)+(5*2.50);
+            var total= ((kg-5)*2.20)+(5*2.50);
               alert(kg+"Kg de Morango = R$"+total);
           }
       } else {
         if (kg<=5){
-              var total= kg*2.50;
-              alert(kg+"Kg de Morango = R$"+total);
+              var total= kg*1.80;
+              alert(kg+"Kg de Maçã = R$"+total);
+          } if (kg>8){
+            var conta= ((kg-5)*1.80)+(5*1.50);
+            var total= conta-((conta/100)*10);
+            alert(kg+"Kg de Maçã = R$"+total);
           } else {
-              var total= ((kg-5)*2.20)+(5*2.50);
-              alert(kg+"Kg de Morango = R$"+total);
+            var total= ((kg-5)*1.50)+(5*1.80);
+              alert(kg+"Kg de Maçã = R$"+total);
           }
       }
     </script>
