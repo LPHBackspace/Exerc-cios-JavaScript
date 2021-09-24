@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio b</title>
+    <!--Apresentar o total da soma obtida dos cem primeiros números inteiros (1+2+3+4+...+98+99+100). -->
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var acul=0;
+        var calc= 0;
+        var conta=0;
+        var result="";
+        while (calc<101) {
+            conta = calc+acul;
+            result +="<br>"+ calc + " + " + acul + " = " + conta;
+            acul= conta;
+            calc++;
+        } 
+        document.getElementById("demo").innerHTML=result;
+    </script>
+</body>
+</html>
