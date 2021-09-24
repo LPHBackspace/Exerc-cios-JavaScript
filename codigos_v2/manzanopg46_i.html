@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio i</title>
+    <!--Elaborar um programa que efetue a leitura de 10 valores numéricos e apresente no final o total do 
+somatório e a média aritmética dos valores lidos.   -->
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+         var numero1=parseInt(prompt("Digite o 1° número"));
+         var numero2=parseInt(prompt("Digite o 2° número"));
+         var numero3=parseInt(prompt("Digite o 3° número"));
+         var numero4=parseInt(prompt("Digite o 4° número"));
+         var numero5=parseInt(prompt("Digite o 5° número"));
+         var numero6=parseInt(prompt("Digite o 6° número"));
+         var numero7=parseInt(prompt("Digite o 7° número"));
+         var numero8=parseInt(prompt("Digite o 8° número"));
+         var numero9=parseInt(prompt("Digite o 9° número"));
+         var numero10=parseInt(prompt("Digite o 10° número"));
+         var soma= numero1+numero2+numero3+numero4+numero5+numero6+numero7+numero8+numero9+numero10;
+         var media= soma/10;
+         var result= numero1+" + "+numero2+" + "+numero3+" + "+numero4+" + "+numero5+" + "+numero6+" + "+numero7+" + "+numero8+" + "+numero9+" + "+numero10+" = "+soma+"<br>"
+         +"Média aritmetica: "+ media;
+         document.getElementById("demo").innerHTML=result;
+    </script>
+</body>

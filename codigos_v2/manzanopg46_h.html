@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio h</title>
+    <!--Elaborar um programa que apresente os valores de conversão de graus Celsius em Fahrenheit, de 
+10 em 10 graus, iniciando a contagem em 10 graus Celsius e finalizando em 100 graus Celsius. O 
+programa deve apresentar os valores das duas temperaturas. A fórmula de conversão 
+é
+5
++1609
+=
+C
+F , sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.   -->
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var celsius=10;
+        var fahrenheit= 0;
+        var result="";
+        while (celsius<101) {
+            fahrenheit= ((celsius*1.8)+32);
+            result +="<br>"+ celsius + "C° " + " = " + fahrenheit + "F°";
+            celsius= celsius+10;
+        } 
+        document.getElementById("demo").innerHTML=result;
+    </script>
+</body>
