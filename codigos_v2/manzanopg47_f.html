@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio f</title>
+    <!--Elaborar um programa que apresente como resultado o valor de uma potência de uma base 
+qualquer elevada a um expoente qualquer, ou seja, de BE
+, em que B é o valor da base e E o valor 
+do expoente. Observe que neste exercício não pode ser utilizado o operador de exponenciação do 
+portuguol (^).-->
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var base=parseInt(prompt("Digite uma base")); 
+        var expo=parseInt(prompt("Digite um expoente")); 
+        var result="";
+        var conta=0;
+        var passos=0;
+        while (passos<1) {
+            conta= Math.pow(base,expo);
+            result +="<br>" + base + "^" + expo + " = " + conta;
+            passos++;
+        } 
+        document.getElementById("demo").innerHTML=result;
+    </script>
+</body>
+</html>

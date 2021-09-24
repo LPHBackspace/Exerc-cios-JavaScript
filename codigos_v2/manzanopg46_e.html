@@ -18,8 +18,8 @@ neste exercício não pode ser utilizado o operador de exponenciação do portug
         var result="";
         var conta=0;
         while (expo<16) {
-            conta= ((expo*expo)*expo);
-            result +="<br>" + expo + "³ =" + conta;
+            conta= Math.pow(3,expo)
+            result +="<br>" + "3" + "^" + expo + " = " + conta;
             expo++;
         } 
         document.getElementById("demo").innerHTML=result;
