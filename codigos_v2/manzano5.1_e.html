@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manzano 5.1 e</title>
+    <!--Apresentar todos os valores numéricos inteiros ímpares situados na faixa de 0 a 20. Para verificar 
+se o número é ímpar, efetuar dentro da malha a verificação lógica desta condição com a instrução 
+se, perguntando se o número é ímpar; sendo, mostre-o; não sendo, passe para o próximo passo. -->
+</head>
+<body>
+    <h1>impares</h1>
+    <p id="change"></p>
+    <script>
+        var change= "";
+       for(let contador = 1;contador<=20;contador++){
+           if (contador % 2 != 0){
+               change += "<br>"+contador;
+           }
+       }
+       document.getElementById("change").innerHTML=change;
+    </script>
+</body>
+</html>
