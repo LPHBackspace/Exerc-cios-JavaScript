@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio a</title>
+    <!--Apresentar os resultados de uma tabuada de multiplicar (de 1 até 10) de um número qualquer-->
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      var num=parseFloat(prompt("Digite um número"));
+        var calc= 1;
+        var result="";
+        while (calc<11){
+            result +="<br>"+num+"x"+calc+" = "+(calc*num);
+            calc++;
+        }
+        document.getElementById("demo").innerHTML=result;
+    </script>
+</body>
+</html>
