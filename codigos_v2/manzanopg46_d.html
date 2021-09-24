@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio d</title>
+    <!--Apresentar todos os valores numéricos inteiros ímpares situados na faixa de 0 a 20. Para verificar 
+se o número é ímpar, efetuar dentro da malha a verificação lógica desta condição com a instrução 
+se, perguntando se o número é ímpar; sendo, mostre-o; não sendo, passe para o próximo passo.  -->
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var num=0;
+        var result=0;
+        while (num<21) {
+            if (num % 2 != 0){
+            result +="<br>"+num;
+            num++;
+            } else {
+                num++;
+            }
+        } 
+        document.getElementById("demo").innerHTML=result;
+    </script>
+</body>
+</html>
