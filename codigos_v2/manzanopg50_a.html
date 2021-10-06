@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio a pg 50 manzano</title>
+    <!--Apresentar os quadrados dos números inteiros de 15 a 200. -->
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var escreva='';
+        var num=15;
+        var result='';
+        while (num<201) {
+            result= num*num;
+            escreva += "<br>"+ num + " ^2 = " +result;
+            num++;
+            
+        } 
+        document.getElementById("demo").innerHTML=escreva;
+    </script>
+
+
+</body>
